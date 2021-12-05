@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class task6_3 {
+    //Method, which shows the bombs
     public static void Cheat(int[][] array, int h, int w) {
         for (int x = 0; x < h; x++) {
             for (int y = 0; y < w; y++) {
@@ -40,8 +41,8 @@ public class task6_3 {
         boolean Defeat = false;
         int h = in.nextInt();
         int w = in.nextInt();
-        int minesRandom[][] = MinesRandom(h, w);
-        char minesView[][] = MinesView(h, w);
+        int[][] minesRandom = MinesRandom(h, w);
+        char[][] minesView = MinesView(h, w);
         while (!Defeat) {
             for (int x = 0; x < h; x++) {
                 for (int y = 0; y < w; y++) {
